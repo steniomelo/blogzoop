@@ -1,0 +1,28 @@
+.page-blog{
+    .thumb-post{
+        max-width: 29.2rem;
+        margin-right:3rem;
+        &:nth-child(3n+3){
+            margin-right: 0;
+        }
+        figure{
+            margin-bottom:1.5rem;
+        }
+        .category{
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: #FF7300;
+            margin-bottom:1.5rem;
+            display: block;
+        }
+        .title{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            color: #000 ;
+        }
+    }
+}

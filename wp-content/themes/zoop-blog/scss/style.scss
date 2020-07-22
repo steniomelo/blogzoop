@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// BASE
+@import "base/reset";
+@import "base/fonts";
+
+// VENDOR
+@import "vendor/owlcarousel/owl.carousel";
+
+// UTILS
+@import "utils/sprites";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+// COMPONENTS
+@import "components/navbar";
+@import "components/featured_content";
+@import "components/featured_category";
+@import "components/thumb_post";
+@import "components/thumb_categories";
+@import "components/headline";
+@import "components/featured_podcast";
+
+// LAYOUT
+@import "layout/global";
+
+// PAGES
+@import "pages/home";
