@@ -17,6 +17,28 @@
 get_header();
 ?>
 
+<div class="navbar">
+    <div class="container">
+        <div class="submenu-title">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">blog</a> 
+            <span><?php wp_title('', true); ?></span>
+        </div>
+        <div class="menu-container">
+
+            <ul class="menu">
+                <li><a href="">Mais lidos</a></li>
+                <li><a href="">Mais recentes</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/negocios' ) ); ?>">Negócios</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/tecnologia' ) ); ?>">Tecnologia</a></li>
+            </ul>
+            
+            <div class="menu-search">
+                <?php get_search_form(); ?>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="wrap">
 	<div class="container">
 		<div class="featured-content">
@@ -90,15 +112,12 @@ get_header();
 					<img src="<?php bloginfo('template_directory'); ?>/img/layout/img-neg.png" alt="">
 					<h3 class="title">negócios</h3>
 					<div class="content-categories">
-						<ul>
-							<li><a href="">Pagamentos</a></li>
-							<li><a href="">Mercado</a></li>
-							<li><a href="">Empreendedorismo</a></li>
-							<li><a href="">Banking</a></li>
-							<li><a href="">Regulamentação</a></li>
-							<li><a href="">Zoop</a></li>
-							<li><a href="">Podcast</a></li>
-						</ul>
+						<?php 
+							wp_nav_menu(array(
+								'container' => false,
+								'menu' => 'menu negocios'
+							));
+						?>
 					</div>
 				</div>
 
@@ -106,14 +125,12 @@ get_header();
 					<img src="<?php bloginfo('template_directory'); ?>/img/layout/img-tec.png" alt="">
 					<h3 class="title">tecnologia</h3>
 					<div class="content-categories tec">
-						<ul>
-							<li><a href="">Produtos</a></li>
-							<li><a href="">Análises</a></li>
-							<li><a href="">Gestão</a></li>
-							<li><a href="">Programação</a></li>
-							<li><a href="">Carreira</a></li>
-							<li><a href="">Releases</a></li>
-						</ul>
+						<?php 
+							wp_nav_menu(array(
+								'container' => false,
+								'menu' => 'menu tecnologia'
+							));
+						?>
 					</div>
 				</div>
 			</div>

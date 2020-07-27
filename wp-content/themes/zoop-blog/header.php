@@ -22,22 +22,3 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="page-blog">
-	<div class="navbar">
-		<div class="container">
-			<div class="submenu-title">
-				<a href="">blog</a> 
-				<span><?php wp_title('', true); ?></span>
-			</div>
-			<div class="menu-container">
-				<ul class="menu">
-					<li><a href="">Mais lidos</a></li>
-					<li><a href="">Mais recentes</a></li>
-					<li><a href="">Negócios</a></li>
-					<li><a href="">Tecnologia</a></li>
-				</ul>
-				<div class="menu-search">
-					<?php get_search_form(); ?>
-				</div>
-			</div>
-		</div>
-	</div>

@@ -3,7 +3,7 @@
         padding:7rem 0;
         background: #fff;
         .container{
-            max-width: 100rem;
+            max-width: 110rem;
             display: flex;
         }
         p{
@@ -13,6 +13,11 @@
         }
         .title{
             width: 50%;
+            &.sub{
+                p{
+                    color:#FF7300;
+                }
+            }
             p{
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.8rem;

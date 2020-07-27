@@ -26,17 +26,31 @@
                 }
             }
             span{
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.8rem;
-                text-transform: lowercase;
-                color:#FF7300;
-                font-weight:bold;
+                a{
+                    color:#FF7300;
+                    &:after{
+                        display: none;
+                    }   
+                }
             }
         }
         .menu-container{
             display: flex;
             align-items: center;
-            .menu{
+            .current_page_item,
+            .current_page_item{
+                a{
+                    color:#FF7300;
+                }
+            }
+            // .current_page_parent{
+            //     .children{
+            //         &:after{
+            //             display: none;
+            //         }
+            //     }
+            // }
+            ul{
                 display: flex;
                 align-items: center;
                 li{

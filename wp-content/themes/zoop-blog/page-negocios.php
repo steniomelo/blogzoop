@@ -14,6 +14,8 @@
 get_header();
 ?>
 
+	<?php include 'inc/menu-negocios.php'; ?>
+
 	<div class="wrap white">
 
 		<div class="headline-page">

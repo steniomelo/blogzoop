@@ -340,3 +340,4 @@ function wp_search_form( $form ) {
 }
 
 add_filter( 'get_search_form', 'wp_search_form' );
+
